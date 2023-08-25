@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -22,19 +22,29 @@
 
     </header>
 
+    <div id ="title">
+        "Organize, Prioritize, Conquer"
+    </div>
+
+
 
     <form name = "form">
         <h1>Add ToDo Form</h1>
-        <input placeholder="title" type = "text" name = "title"/>
-        <input placeholder="price" type = "number" name = "price" />
-        <input placeholder="description" type = "text" name = "description"/>
-        <input placeholder="image url" type = "text" name = "imgUrl"/>
-        <button>Submit</button>
+        <input class = "input" placeholder="title" type = "text" name = "title"/>
+        <input class = "input" placeholder="price" type = "number" name = "price" />
+        <input class = "input" placeholder="description" type = "text" name = "description"/>
+        <input class = "input" placeholder="image url" type = "text" name = "imgUrl"/>
+        <button id ="submit-btn">Submit</button>
     </form>
 
  
     <div id="list">
     </div>
+
+    <div class="instructions">
+        <p>Scroll through the list to see all your todos.</p>
+      </div>
+      
 
     <footer>
         <img class = "footer-icons" src = "./images/facebook2.png" />
