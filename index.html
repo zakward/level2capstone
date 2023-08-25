@@ -3,20 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
     <title>Document</title>
 </head>
 <body>
+
+
+    <header>
+        <div class="header-content">
+            <nav class="header-elements">
+                <h3 class = "header-element">Level 2 Capstone</h3>
+                <h3 class="header-element" id = "header-title" >Axios ToDo List</h3>
+                <h3 class="header-element">Student Name</h3>
+            </nav>
+        </div>
+
+    </header>
+
+
     <form name = "form">
+        <h1>Add ToDo Form</h1>
         <input placeholder="title" type = "text" name = "title"/>
         <input placeholder="price" type = "number" name = "price" />
         <input placeholder="description" type = "text" name = "description"/>
         <input placeholder="image url" type = "text" name = "imgUrl"/>
-        <button>Add Todo</button>
+        <button>Submit</button>
     </form>
 
+ 
     <div id="list">
-
     </div>
+
+    <footer>
+        <img class = "footer-icons" src = "./images/facebook2.png" />
+        <img class = "footer-icons" src = "./images/403-instagram.png" />
+        <img class = "footer-icons" src = "./images/407-twitter.png" />
+        <img class = "footer-icons" src = "./images/433-github.png" />
+    </footer>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script> 
     <script src="main.js"></script>

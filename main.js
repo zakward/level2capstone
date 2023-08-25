@@ -46,26 +46,32 @@ function listData(data) {
     const h1 = document.createElement("h1");
     h1.textContent = data[i].title;
     div.appendChild(h1);
+    div.className = "todo-item";
 
     const p = document.createElement("p");
     p.textContent = data[i].description;
     div.appendChild(p);
+    p.className = "todo-item-details";
 
     const p2 = document.createElement("p");
     p2.textContent = data[i].price;
     div.appendChild(p2);
+    p2.className = "todo-item-details";
 
     const img = document.createElement("img");
     img.src = data[i].imgUrl;
     div.appendChild(img);
+    img.className = "todo-item-img";
 
     const button = document.createElement("button");
     button.textContent = "Delete";
     div.appendChild(button);
+    button.className = "todo-item-buttons";
 
     const button2 = document.createElement("button");
     button2.textContent = "Edit";
     div.appendChild(button2);
+    button2.className = "todo-item-buttons";
 
     const label = document.createElement("label");
     label.textContent = "Completed";
@@ -79,6 +85,9 @@ function listData(data) {
       h1.style.textDecoration = "line-through";
       p.style.textDecoration = "line-through";
       p2.style.textDecoration = "line-through";
+      h1.style.textDecorationColor = "black";
+      p.style.textDecorationColor = "black";
+      p2.style.textDecorationColor = "black";
       checkbox.checked = true;
     }
 
