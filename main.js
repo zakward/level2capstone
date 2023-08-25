@@ -63,14 +63,18 @@ function listData(data) {
     div.appendChild(img);
     img.className = "todo-item-img";
 
+    const buttonDiv = document.createElement("div");
+    buttonDiv.className = "button-div";
+    div.appendChild(buttonDiv);
+
     const button = document.createElement("button");
     button.textContent = "Delete";
-    div.appendChild(button);
+    buttonDiv.appendChild(button);
     button.className = "todo-item-buttons";
 
     const button2 = document.createElement("button");
     button2.textContent = "Edit";
-    div.appendChild(button2);
+    buttonDiv.appendChild(button2);
     button2.className = "todo-item-buttons";
 
     const label = document.createElement("label");

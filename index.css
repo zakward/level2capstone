@@ -91,6 +91,11 @@ background-color: whitesmoke;
   margin-top: 10px; 
 }
 
+.button-div {
+    display: flex;
+    gap: 10px;
+}
+
 .todo-item button {
     background: linear-gradient(135deg, #27AE60, #2ECC71);
   border: none;
