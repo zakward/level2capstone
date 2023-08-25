@@ -45,6 +45,7 @@ function listData(data) {
     list.appendChild(div);
     const h1 = document.createElement("h1");
     h1.textContent = data[i].title;
+    h1.className = "todo-item-title";
     div.appendChild(h1);
     div.className = "todo-item";
 

@@ -14,6 +14,7 @@ body {
   background-color: rgb(200, 191, 191);
 font-family: 'Roboto', sans-serif;  
 gap: 10vw;
+
 }
 
 form {
@@ -26,7 +27,7 @@ display: grid;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   width: 20vw;
-color: black;
+  color: #333;
   border-radius: 12px;
   background-color: whitesmoke;
   height: 45vh;
@@ -56,11 +57,11 @@ form input, form button {
   background: linear-gradient(135deg, #27AE60, #2ECC71);
   scrollbar-width: thin; /* For Firefox */
   scrollbar-color: #ccc #f0f0f0;
+
 }
 
 .todo-item {
 background-color: whitesmoke;
- color: black;
   border-radius: 5px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
   margin-bottom: 15px;
@@ -71,6 +72,12 @@ background-color: whitesmoke;
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  border-bottom: 1px solid black;
+  color: #333;
+}
+
+.todo-item-title {
+   border-bottom: 1px solid black;
 }
 
 .todo-item img {
@@ -83,6 +90,7 @@ background-color: whitesmoke;
 
 .todo-item-details {
   text-align: center;
+
 }
 
 .todo-item-buttons {
@@ -169,6 +177,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    color: #333;
   }
   
   .header-element {
