@@ -41,6 +41,9 @@ form input, form button {
   padding: 10px;
 }
 
+
+
+
 #list {
   display: flex;
   flex-direction: column;
@@ -54,7 +57,7 @@ form input, form button {
   border-radius: 12px;
   padding-top: 30px;
   padding-bottom: 30px;
-  background: linear-gradient(135deg, #27AE60, #2ECC71);
+  background: linear-gradient(to bottom, #2980b9, #87bdd8);
   scrollbar-width: thin; /* For Firefox */
   scrollbar-color: #ccc #f0f0f0;
 
@@ -105,18 +108,17 @@ background-color: whitesmoke;
 }
 
 .todo-item button {
-    background: linear-gradient(135deg, #27AE60, #2ECC71);
+  background: linear-gradient(to bottom, #2980b9, #87bdd8);
   border: none;
   border-radius: 5px;
   color: white;
   cursor: pointer;
   padding: 5px 10px;
-  transition: background-color 0.3s;
+  transition: box-shadow 0.3s;
 }
 
 .todo-item button:hover {
-    background: linear-gradient(135deg, #27AE60, #2ECC71);
-}
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);}
 
 footer {
     color: white;
@@ -130,7 +132,7 @@ footer {
     flex-direction: row;
  align-items: center;
     justify-content: space-around;
-    background: linear-gradient(135deg, #27AE60, #2ECC71);
+    background: linear-gradient(to bottom, #2980b9, #87bdd8);
     border: 1px solid black;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
@@ -146,7 +148,7 @@ footer {
   
   
   header {
-    background: linear-gradient(135deg, #27AE60, #2ECC71);
+    background: linear-gradient(to bottom, #2980b9, #87bdd8);
     text-align: center;
     padding: 10px 0;
     width: 100%;
@@ -186,7 +188,7 @@ footer {
   }
   
   .header-element:hover {
-    color: white;
+    border-bottom: 1px solid #333;
   }
 
   #header-title {
@@ -240,7 +242,7 @@ input[type="text"]::placeholder {
 }
 
 #submit-btn {
-    background: linear-gradient(135deg, #27AE60, #2ECC71);
+  background: linear-gradient(to bottom, #2980b9, #87bdd8);
   color: #fff;
   border: none;
   border-radius: 5px;

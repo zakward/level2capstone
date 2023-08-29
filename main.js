@@ -85,6 +85,7 @@ function listData(data) {
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
     div.appendChild(checkbox);
+    checkbox.className = "checkbox";
 
     if (data[i].completed === true) {
       h1.style.textDecoration = "line-through";
