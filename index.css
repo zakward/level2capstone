@@ -119,8 +119,9 @@ form button {
 }
 
 .todo-item button:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);}
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 
 footer {
     color: white;
@@ -134,7 +135,7 @@ footer {
     flex-direction: row;
  align-items: center;
     justify-content: space-around;
-    background: linear-gradient(135deg, #27AE60, #2ECC71);
+    background: linear-gradient(to bottom, #2980b9, #87bdd8);
     border: 1px solid black;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
@@ -377,6 +378,7 @@ input[type="text"]::placeholder {
   }
 
   footer {
+    display: flex;
     text-align: center;
     position: static;
     width: 100%;
@@ -385,6 +387,7 @@ input[type="text"]::placeholder {
     align-items: center; 
     justify-content: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to bottom, #2980b9, #87bdd8);
   }
 
 }
