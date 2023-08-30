@@ -130,19 +130,19 @@ function listData(data) {
       imgEdit.value = img.src;
       div.prepend(imgEdit);
       imgEdit.setAttribute("class", "editInput");
-      titleEdit.readOnly = true;
+      imgEdit.readOnly = true;
 
       const descriptionEdit = document.createElement("input");
       descriptionEdit.value = p.textContent;
       div.prepend(descriptionEdit);
       descriptionEdit.setAttribute("class", "editInput");
-      titleEdit.readOnly = true;
+      descriptionEdit.readOnly = true;
 
       const priceEdit = document.createElement("input");
       priceEdit.value = p2.textContent;
       div.prepend(priceEdit);
       priceEdit.setAttribute("type", "number");
-      titleEdit.readOnly = true;
+      priceEdit.readOnly = true;
 
       const titleEdit = document.createElement("input");
       titleEdit.value = h1.textContent;
