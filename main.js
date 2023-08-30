@@ -97,28 +97,28 @@ function listData(data) {
       checkbox.checked = true;
     }
 
-    checkbox.addEventListener("change", function () {
-      if (checkbox.checked) {
-        axios
-          .put(`https://api.vschool.io/zakward/todo/${iD}`, { completed: true })
-          .then((res) => getData())
-          .catch((err) => console.log(err));
-      } else {
-        axios
-          .put(`https://api.vschool.io/zakward/todo/${iD}`, {
-            completed: false,
-          })
-          .then((res) => getData())
-          .catch((err) => console.log(err));
-      }
-    });
+    // checkbox.addEventListener("change", function () {
+    //   if (checkbox.checked) {
+    //     axios
+    //       .put(`https://api.vschool.io/zakward/todo/${iD}`, { completed: true })
+    //       .then((res) => getData())
+    //       .catch((err) => console.log(err));
+    //   } else {
+    //     axios
+    //       .put(`https://api.vschool.io/zakward/todo/${iD}`, {
+    //         completed: false,
+    //       })
+    //       .then((res) => getData())
+    //       .catch((err) => console.log(err));
+    //   }
+    // });
 
-    button.addEventListener("click", () => {
-      axios
-        .delete(`https://api.vschool.io/zakward/todo/${iD}`)
-        .then((res) => getData())
-        .catch((err) => console.log(err));
-    });
+    // button.addEventListener("click", () => {
+    //   axios
+    //     .delete(`https://api.vschool.io/zakward/todo/${iD}`)
+    //     .then((res) => getData())
+    //     .catch((err) => console.log(err));
+    // });
 
     button2.addEventListener("click", () => {
       h1.remove(this);
@@ -145,6 +145,7 @@ function listData(data) {
       titleEdit.value = h1.textContent;
       div.prepend(titleEdit);
       titleEdit.setAttribute("class", "editInput");
+      titleEdit.readOnly = true;
 
       button2.remove(this);
       const saveBtn = document.createElement("button");
