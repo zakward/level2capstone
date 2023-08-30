@@ -14,24 +14,24 @@ function clearListData() {
   }
 }
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  const newTodo = {
-    title: form.title.value,
-    description: form.description.value,
-    price: form.price.value,
-    imgUrl: form.imgUrl.value,
-  };
-  form.title.value = "";
-  form.description.value = "";
-  form.price.value = "";
-  form.imgUrl.value = "";
+// form.addEventListener("submit", (e) => {
+//   e.preventDefault();
+//   const newTodo = {
+//     title: form.title.value,
+//     description: form.description.value,
+//     price: form.price.value,
+//     imgUrl: form.imgUrl.value,
+//   };
+//   form.title.value = "";
+//   form.description.value = "";
+//   form.price.value = "";
+//   form.imgUrl.value = "";
 
-  axios
-    .post("https://api.vschool.io/zakward/todo", newTodo)
-    .then((res) => getData())
-    .catch((err) => console.log(err));
-});
+//   axios
+//     .post("https://api.vschool.io/zakward/todo", newTodo)
+//     .then((res) => getData())
+//     .catch((err) => console.log(err));
+// });
 
 function listData(data) {
   clearListData();
