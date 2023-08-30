@@ -391,3 +391,15 @@ input[type="text"]::placeholder {
   }
 
 }
+
+@media screen and (max-width: 844px) and (orientation: landscape) {
+  body{
+    height: 150vh;
+  }
+
+  .new-input-form{
+    height: auto;
+    width: auto;
+  }
+
+}
